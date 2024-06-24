@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./Photo (b)/b1.png">
+    <title>HACKSMM | Создание заказа</title>
+    </head>
+    <body>
+        <div id="telegram-float-icon">
+            <a href="https://t.me/olimjonpulatov" target="_blank">
+                <img src="Logo/telegram.png" alt="Contact us on Telegram">
+            </a>
+        </div>
+        <div id="instagram-float-icon">
+            <a href="https://www.instagram.com/olimjonpulatovv?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">
+                <img src="Logo/instagram.png" alt="Contact us on Instagram">
+            </a>
+        </div>
+        <header>
+            <a href="hacksmm.ru 2.html"><p id="scrin1">HACKSMM<span>.RU</span></p></a>
+            <div id="sidebar" class="sidebar">
+                <img src="Photo (d)/d2.png" onclick="closeNav()" class="closebtn">
+                <a href="platizi.html">Баланс 0₽</a>
+                <a href="hacksmm.ru 2.html">Главная</a>
+                <a href="sozdania zakaza.html">Создать заказ</a>
+                <a href="poddershka.html">Поддержка</a>
+                <a href="novosti.html">Новости</a>
+                <a href="platizi.html">Пополнение баланса</a>
+                <a href="uslugi.html">Услуги</a>
+                <a href="svyaz s raz 2.html">Связь с разработчиком</a>
+                <a href="index.html">Выйти из аккаунта</a>
+                <a href="sozdania zakaza.html"><img src="Language/russia.png" width="40px" id="lang-rus"></a>
+                <a href="sozdania zakaza tj.html"><img src="Language/tajikistan.png" width="40px"></a>
+            </div>
+            <img src="Photo (d)/d1.png" class="openbtn" onclick="openNav()">
+        </header>
+
+
+    <main>
+        <div class="order-form">
+            <h2>Создание заказа</h2>
+            <label for="category">Выберите категорию</label>
+            <select id="category">
+            <option value="none">Категория</option>
+            <option value="category1">Instagram</option>
+            <option value="category2">Telegram</option>
+            <option value="category3">TikTok</option>
+            <option value="category4">YouTube</option>
+            <option value="category5">VK</option>
+            <option value="category6">Twitter</option>
+            </select>
+
+            <label for="serviceType">Выберите услугу</label>
+            <select id="serviceType">
+            <option value="none">Услуга</option>
+            <option value="service1">Подписчики</option>
+            <option value="service2">Лайки</option>
+            <option value="service3">Просмотры</option>
+            <option value="service4">Просмотры истории</option>
+            <option value="service5">Сохранение</option>
+            <option value="service6">Охваты</option>
+            <option value="service7">Поделиться постом</option>
+            </select>
+
+            <label for="price">Цена в (₽)</label>
+            <input type="number" id="price" readonly>
+
+            <label for="quantity">Количество</label>
+            <input type="number" id="quantity" min="1" value="0">
+
+            <label for="totalPrice">Общая стоимость</label>
+            <input type="number" id="totalPrice" readonly>
+
+            <button id="orderBtn">Заказать</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_a">
+            <a href="hacksmm.ru 2.html" class="header-p1 footer-a1 "><span>HACKSMM</span>.RU</a>
+        </div>
+        <p id="footer-p1">
+            Накрутка сoцеальных сетей 2024
+        </p>
+        <div id="footer-a">
+    
+        <img src="Logo/instagram.png" class="footer-img-1">
+        <a href="#">HACKSMM</a>
+        
+        <img src="Photo (a)/a4.png" class="footer-img-1">
+        <a href="#">info@hacksmm.ru</a>
+    
+        <img src="Logo/telegram.png" class="footer-img-1">
+        <a href="https://t.me/hacksmmnews">HACKSMM</a>
+    </div>
+    </footer>
+
+<style>
+@media screen and (max-width: 767px){
+    body #telegram-float-icon img{
+        width: 55px;
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+    body #instagram-float-icon img{
+        width: 55px;
+        position: relative;
+        left: 5px;
+    }
+    body header{
+        height: 50px;
+    }
+    header #scrin1{
+        font-size: 33px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    header div a img{
+        width: 30px;
+    }
+    header .openbtn{
+        cursor: pointer;
+        width: 35px;
+        position: relative;
+        left: 0;
+        padding-right: 5px;
+    }
+    header .closebtn{
+        cursor: pointer;
+        width: 35px;
+        margin-right: 137px;
+        margin-top: 7px;
+    }
+    header .sidebar a{
+        font-size: 16.5px;
+        position: relative;
+        bottom: 15px;
+        right: 5px;
+    }
+    main h2{
+        font-size: 20px;
+    }
+    main label{
+        font-size: 15px;
+    }
+    body footer{
+        height: 151px;
+        margin: 0;
+        padding: 0;
+    }
+    footer .header-p1{
+        font-size: 20px;
+        position: relative;
+        top: -30px;
+        margin: 0;
+    }
+    footer #footer-p1{
+        font-size: 15px;
+        position: relative;
+        top: -15px;
+        margin: 0;
+    }
+    footer #footer-a img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -45px;
+        margin: 5px;
+    }
+    footer #footer-a a{
+        font-size: 10px;
+        position: relative;
+        top: -45px;
+        margin: 0;
+    }
+}
+body img{
+    transition: transform 0.5s ease;
+}
+body img:hover{
+    transform: scale(1.1);
+}
+#telegram-float-icon{
+    position: fixed;
+    bottom: 125px;
+    right: 30px;
+    z-index: 1000;
+}
+#telegram-float-icon img{
+    display: block;
+    width: 70px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+#telegram-float-icon a:hover img{
+    transform: scale(1.2);
+}
+#instagram-float-icon{
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    z-index: 1000;
+}
+#instagram-float-icon img{
+    display: block;
+    width: 70px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+#instagram-float-icon a:hover img{
+    transform: scale(1.2);
+}
+body{
+    margin: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background: rgba(20, 20, 20, 0.5);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header p{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.header-p1{
+    color: blue;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.header-p1 span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+header p span{
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+}
+header p:hover{
+    color: #000000;
+    transition: 0.5s ease;
+}
+header a{
+    text-decoration: none;
+}
+header #sidebar img{
+    width: 40px;
+}
+#lang-rus{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    display: block;
+    transition: 0.5s;
+}
+.sidebar a:hover {
+    color: #ffffff;
+}
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.closebtn{
+    cursor: pointer;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 127px;
+}
+.openbtn{
+    cursor: pointer;
+    width: 40px;
+    position: relative;
+    right: 10px;
+}
+main{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.order-form {
+    background: linear-gradient(to right, rgb(120, 0, 0), rgb(60, 0, 60),  rgb(0, 0, 120));
+    border-radius: 20px;
+    width: 600px;
+    margin: 50px;
+    padding: 30px;
+}
+.order-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.order-form select, .order-form input {
+    width: 575px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.a1{
+    width: 300px;
+}
+.order-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.order-form button:active{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+footer{
+    background: rgb(30, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 270px;
+}
+.footer-a1{
+    font-size: 40px;
+    position: relative;
+    top: 1px;
+}
+#footer_a{
+    padding-top: 40px;
+    text-align: center;
+}
+footer p{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    bottom: 23px;
+}
+#footer-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-img-1{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+</style>
+
+    <script>
+        const servicePrices = {
+        "service1": 0.035,
+        "service2": 0.005,
+        "service3": 0.006,
+        "service4": 0.010,
+        "service5": 0.015,
+        "service6": 0.07,
+        "service7": 0.020,
+        };
+
+        document.getElementById('serviceType').addEventListener('change', function() {
+        const selectedService = this.value;
+        const price = servicePrices[selectedService] || 0;
+        document.getElementById('price').value = price;
+        calculateTotalPrice();
+        });
+
+        document.getElementById('quantity').addEventListener('input', calculateTotalPrice);
+
+        function calculateTotalPrice() {
+        const price = parseFloat(document.getElementById('price').value) || 0;
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        document.getElementById('totalPrice').value = price * quantity;
+        }
+
+        document.getElementById('orderBtn').addEventListener('click', function() {
+        alert('Order placed successfully!');
+        });
+    </script>
+
+    <script>
+        function openNav() {
+        document.getElementById("sidebar").style.width = "200px";
+    }
+    
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+    </script>
+</body>
+</html>
